@@ -4,14 +4,14 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'GOT_wrapper/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "A_song_of_ice_and_fire_ruby_wrapper"
+  spec.name          = "GOT_wrapper"
   spec.version       = GOTWrapper::VERSION
   spec.authors       = ["Tom Yang"]
   spec.email         = ["xy2286@columbia.edu"]
 
   spec.summary       = %q{ A wrapper for A song of fire and ice}
   spec.description   = %q{ Easily use the API }
-  spec.homepage      = "https://github.com/TomYang1993/A_song_of_ice_and_fire_ruby_wrapper.git"
+  spec.homepage      = "https://github.com/TomYang1993/GOT_wrapper.git"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
