@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'GOT_wrapper/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "GOT_wrapper"
+  spec.name          = "A_song_of_ice_and_fire_ruby_wrapper"
   spec.version       = GOTWrapper::VERSION
   spec.authors       = ["Tom Yang"]
   spec.email         = ["xy2286@columbia.edu"]
