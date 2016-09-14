@@ -31,6 +31,14 @@ GOTWrapper::House.all
 you will get a array of 400 houses, and you can call `.name` `.region` `.words` on your house element.
 
 
+you can grab data of a single house by a `.find_by(house_name)` method:
+
+```ruby
+GOTWrapper::House.find_by("House Stark")
+```
+house_name must be both uppercase with a space inside
+
+
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.

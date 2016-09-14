@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["xy2286@columbia.edu"]
 
   spec.summary       = %q{ A wrapper for A song of fire and ice}
-  spec.description   = %q{ Easily use the API }
+  spec.description   = %q{ Wrap data for you including houses, characters, books concerning Game of Thrones }
   spec.homepage      = "https://github.com/TomYang1993/GOT_wrapper.git"
   spec.license       = "MIT"
 
