@@ -22,7 +22,14 @@ Or install it yourself as:
 
 ## Usage
 
-Write usage instructions here
+you can grab data of 400 different houses from a `.all` method:
+
+```ruby
+GOTWrapper::House.all
+```
+
+you will get a array of 400 houses, and you can call `.name` `.region` `.words` on your house element.
+
 
 ## Development
 
