@@ -1,5 +1,6 @@
 require "GOT_wrapper/version"
 require "unirest"
+require "pry"
 
 module GOTWrapper
   class House
@@ -11,10 +12,17 @@ module GOTWrapper
     end
 
     def self.all
-        houses_array = Unirest.get("http://www.anapioficeandfire.com/api/houses?").body
+        house_array = []
+        i = 1
+        while i < 41
+          house_array << Unirest.get("http://www.anapioficeandfire.com/api/houses?page="+ i.to_s).body
+          i += 1
+        end
         houses = []
-        houses_array.each do |house|
-          houses << House.new(house)
+        house_array.each do |tenhouse|
+          tenhouse.each do |house|
+            houses << House.new(house)
+          end
         end
         houses
     end
